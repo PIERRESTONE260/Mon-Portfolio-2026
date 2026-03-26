@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b5952f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" fill="#fcfbfb" rx="14"/>
+  <!-- Forme géométrique abstraite P et S -->
+  <path d="M30 30 L30 70 L45 70 L45 50 L60 50 C68 50 68 30 60 30 Z" fill="none" stroke="url(#goldGrad)" stroke-width="5"/>
+  <path d="M70 70 L40 70" stroke="url(#goldGrad)" stroke-width="5"/>
+</svg>
