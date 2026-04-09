@@ -1,6 +1,6 @@
-:root {
-    --violet-doux: #6C63FF;
-    --violet-fonce: #534EDD;
+  :root {
+    --violet-doux: #8d63ff;
+    --violet-fonce: #804edd;
     --orange-vif: #FFA726;
     --gris-tres-Fonce: #333;
     --gris-fonce: #666;
@@ -38,13 +38,16 @@ header div a {
     font-weight: bold;
     color: var(--violet-doux);
 }
+
 ul li {
     list-style: none;
     margin-left: 15px;
 }
+
 ul {
     display: flex;
 }
+
 ul li a {
     text-decoration: none;
     color: var(--gris-fonce);
@@ -69,6 +72,7 @@ ul li a::after {
     transition: width 0.3s ease;
 }
 
+
 ul li a:hover::after {
     width: 100%;
 }
@@ -76,6 +80,7 @@ ul li a:hover::after {
 .active{
     color: var(--violet-doux);
 }
+
 .active::after {
     width: 100%;
 }
@@ -88,13 +93,13 @@ ul li a:hover::after {
     margin: 10rem 2rem;
     text-align: center;
 }
+
 .hero img {
     width: 300px;
     height: 300px;
     object-fit: cover;
     border-radius: 50%;
     border: 8px solid var(--violet-doux);
-    
 }
 
 .hero h1 {
@@ -153,6 +158,7 @@ section h2::after {
     border-radius: 2px;
 }
 
+
 .apropos p {
     margin-bottom: 2rem;
     color: var(--gris-fonce);
@@ -171,7 +177,6 @@ section h2::after {
 
 .competences table th, .competences table td {
     padding: 15px;
-
 }
 
 .competences table thead {
@@ -222,4 +227,326 @@ footer a {
 footer a:hover {
     color: var(--orange-vif);
     transform: translateY(-3px);
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 1100px;
+    margin: 4rem auto;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card::before {
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: var(--violet-doux);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 4px solid var(--violet-doux);
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-content h3 {
+    color: var(--violet-doux);
+    margin-bottom: 0.5rem;
+}
+
+.project-content p {
+    color: var(--gris-fonce);
+    margin-bottom: 1rem;
+}
+
+.tags span {
+    background-color: #eee;
+    color: var(--violet-doux);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.project-links a {
+    text-decoration: none;
+    color: var(--gris-fonce);
+}
+
+.project-links a:hover {
+    color: var(--violet-doux);
+}
+/* Styles pour la page Contact */
+.contact-container {
+    max-width: 1000px;
+    margin: 5rem auto;
+    display: flex;
+    gap: 4rem;
+    padding: 0 2rem;
+    align-items: flex-start;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info h2, .contact-form h2 {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.contact-info h2::after {
+    margin: 0.5rem 0; /* Aligne la barre à gauche */
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    color: var(--gris-fonce);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info i {
+    color: var(--violet-doux);
+}
+
+.social-apps {
+    margin-top: 2rem;
+    display: flex;
+    gap: 15px;
+}
+
+.social-apps a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.social-apps a:first-child { background-color: #25D366; } /* WhatsApp */
+.social-apps a:last-child { background-color: #0088cc; } /* Telegram */
+
+.social-apps a:hover {
+    opacity: 0.8;
+}
+
+/* Styles du formulaire */
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--gris-tres-Fonce);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--gris-clair);
+    border-radius: 8px;
+    outline: none;
+    font-family: inherit;
+}
+
+.input-group input:focus {
+    border-color: var(--violet-doux);
+}
+
+.btn-submit {
+    background-color: var(--violet-doux);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: var(--violet-fonce);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        margin: 2rem auto;
+    }
+}
+
+/* Styles pour la page Divertissement */
+.entertainment-header {
+    text-align: center;
+    padding: 4rem 2rem 2rem;
+}
+
+.entertainment-header p {
+    color: var(--gris-fonce);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.entertainment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.ent-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 4px solid transparent;
+}
+
+.ent-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(108, 99, 255, 0.15);
+    border-bottom: 4px solid var(--violet-doux);
+}
+
+.ent-icon {
+    font-size: 2.5rem;
+    color: var(--violet-doux);
+    margin-bottom: 1.5rem;
+}
+
+.ent-card h3 {
+    font-size: 1.5rem;
+    color: var(--gris-tres-Fonce);
+    margin-bottom: 1rem;
+}
+
+.ent-card p {
+    color: var(--gris-fonce);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: var(--gris-tres-clair);
+    color: var(--violet-doux);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid var(--violet-doux);
+}
+
+/* Ajustement pour mobile */
+@media (max-width: 600px) {
+    .entertainment-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Styles pour la page Passions */
+.passions-intro {
+    text-align: center;
+    padding: 5rem 2rem 3rem;
+}
+
+.passions-list {
+    max-width: 900px;
+    margin: 0 auto 5rem;
+    padding: 0 2rem;
+}
+
+.passion-item {
+    display: flex;
+    align-items: center;
+    background: white;
+    margin-bottom: 2.5rem;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease;
+}
+
+.passion-item:hover {
+    transform: scale(1.02);
+}
+
+.passion-item.reverse {
+    border-right: 5px solid var(--violet-doux);
+}
+
+.passion-item:not(.reverse) {
+    border-left: 5px solid var(--violet-doux);
+}
+
+.passion-text h3 {
+    color: var(--violet-doux);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.passion-text p {
+    color: var(--gris-fonce);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .passion-item {
+        padding: 1.5rem;
+    }
+    
+    .passion-text h3 {
+        font-size: 1.3rem;
+    }
 }
