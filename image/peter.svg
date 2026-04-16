@@ -1,12 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="16" cy="16" r="15" fill="url(#paint0_linear)" />
+  
+  <circle cx="16" cy="16" r="14.5" stroke="#00F2FF" stroke-opacity="0.5" />
+
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" 
+        fill="white" font-family="Arial, sans-serif" font-weight="900" font-size="14">
+    Ts
+  </text>
+
   <defs>
-    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#b5952f;stop-opacity:1" />
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6C63FF"/>
+      <stop offset="1" stop-color="#00F2FF"/>
     </linearGradient>
   </defs>
-  <rect width="100" height="100" fill="#fcfbfb" rx="14"/>
-  <!-- Forme géométrique abstraite P et S -->
-  <path d="M30 30 L30 70 L45 70 L45 50 L60 50 C68 50 68 30 60 30 Z" fill="none" stroke="url(#goldGrad)" stroke-width="5"/>
-  <path d="M70 70 L40 70" stroke="url(#goldGrad)" stroke-width="5"/>
 </svg>

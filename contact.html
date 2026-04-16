@@ -1,79 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="css/Style.CSS">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
+    <title>CONTACT - Pierre</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/peter.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-    <header> 
-        <div>
-          <a href="index.html">Mon Portfolio</a>
+<body class="light-theme">
+    <header>
+        <div class="logo">
+            <a href="index.html">STONE-TECH<span>.Ts</span></a>
         </div>
-        <nav>
-          <ul>
-            <li><a href="index.html" >Accueil</a></li>
-            <li><a href="Projets.html">Projets</a></li>
-            <li><a href="Passion.html">Passions</a></li>
-            <li><a href="Divertissement.html">Divertissement</a></li>
-            <li><a href="contact.html"class="active">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-     <main>
-       <section class="section-title">
-    <h2>Contactez</h2>
-</section>
-
-<main>
-    <section class="contact-container">
-        <div class="contact-info">
-            <h2>Mes Coordonnées</h2>
-            <p><i class="fa-solid fa-location-dot"></i> Lubumbashi, RDC</p>
-            <p>
-                <i class="fa-solid fa-phone"></i> 
-                <a href="tel:+243992846700">+243 992 846 700</a>
-            </p>
-            <div class="social-apps">
-                <a href="https://wa.me/243992846700" target="_blank" title="WhatsApp">
-                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
-                </a>
-                <a href="https://t.me/+243992846700" target="_blank" title="Telegram">
-                    <i class="fa-brands fa-telegram"></i> Telegram
-                </a>
+       <div class="header-right">
+            <div class="theme-toggle" id="theme-button">
+                <i class="fa-solid fa-moon"></i>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
 
-        <div class="contact-form">
-            <h2>Envoyez un message</h2>
-            <form action="#">
-                <div class="input-group">
-                    <label for="nom">Nom complet</label>
-                    <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
-                </div>
-                <div class="input-group">
-                    <label for="tel">Téléphone</label>
-                    <input type="tel" id="tel" name="tel" placeholder="Votre numéro" required>
-                </div>
-                <button type="submit" class="btn-submit">Envoyer</button>
-            </form>
-        </div>
-    </section>
-</main>
-      <footer>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="divertissement.html">Divertissement</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="tech-mode">
+        <section class="contact-header fade-in">
+            <h1 class="tech-title">CONNECT_</h1>
+            <p class="tech-para">Protocol Lubumbashi_Tech</p>
+        </section>
+        <section class="contact-wrapper">
+            <div class="contact-form-container tech-card slide-in-bottom">
+                <form class="pro-form">
+                    <div class="form-group">
+                        <label>IDENTITÉ</label>
+                        <input type="text" placeholder="NOM" required>
+                    </div>
+                    <div class="form-group">
+                        <label>CONTACT</label>
+                        <input type="text" placeholder="+243..." required>
+                    </div>
+                    <textarea rows="4" placeholder="Message..."></textarea>
+                    <button type="submit" class="btn-tech">EXECUTE_SEND <i class="fa-solid fa-bolt"></i></button>
+                </form>
+            </div>
+            <div class="quick-links-mobile">
+                <a href="https://wa.me/243992846700" class="tech-link wa"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://t.me/+243992846700" class="tech-link tg"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+        </section>
+    </main>
 
-        <p>&copy; 2026 Pierre. Tous droits réservés.</p>
-
-        <div>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Pierre stone.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
         </div>
-      </footer>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,23 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MON PORTFOLIO</title>
+    <title>PASSIONS - Pierre</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="image/peter.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body class="light-theme">
     <header>
-        <div>
-            <a href="index.html">Mon Portfolio</a>
+        <div class="logo">
+            <a href="index.html">STONE-TECH<span>.Ts</span></a>
+        </div>
+        <div class="header-right">
+            <div class="theme-toggle" id="theme-button">
+                <i class="fa-solid fa-moon"></i>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
 
         <nav>
-            <ul>
+            <ul class="nav-list">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="projets.html">Projets</a></li>
                 <li><a href="passions.html" class="active">Passions</a></li>
@@ -27,42 +33,37 @@
         </nav>
     </header>
     <main>
-    <section class="passions-intro">
-        <h2>Ce qui me fait vibrer</h2>
-        <p>Au-delà du code, je suis animé par la création d'outils qui facilitent l'apprentissage et l'innovation numérique.</p>
-    </section>
+        <section class="passions-intro fade-in">
+            <h2>Ce qui me fait vibrer</h2>
+        </section>
+        <section class="passions-list">
+            <article class="passion-item fade-in">
+                <div class="passion-image"><img src="image/filmsall.png" alt="Education"></div>
+                <div class="passion-text">
+                    <h3>Outils éducatifs</h3>
+                    <p>Concevoir des solutions pour l'UDBL.</p>
+                </div>
+            </article>
+            <article class="passion-item reverse fade-in">
+                <div class="passion-text">
+                    <h3>IA & Innovation</h3>
+                    <p>Exploration des modèles GPT et APIs vocales.</p>
+                </div>
+                <div class="passion-image"><img src="image/photo-1460925895917-afdab827c52f.avif" alt="IA"></div>
+            </article>
+        </section>
+    </main>
 
-    <section class="passions-list">
-        <article class="passion-item">
-            <div class="passion-text">
-                <h3><i class="fa-solid fa-code-branch"></i> Développement d'outils éducatifs</h3>
-                <p>Ma passion principale est de concevoir des solutions technologiques pour aider mes pairs étudiants. J'aime l'idée que le code peut simplifier l'accès à la connaissance et organiser les ressources académiques de manière intelligente.</p>
-            </div>
-        </article>
-
-        <article class="passion-item reverse">
-            <div class="passion-text">
-                <h3><i class="fa-solid fa-microchip"></i> Intelligence Artificielle & Innovation</h3>
-                <p>Je suis fasciné par l'intégration de l'IA dans les applications web. Explorer comment les modèles de langage et les APIs vocales peuvent transformer l'expérience utilisateur est un défi que je relève avec enthousiasme.</p>
-            </div>
-        </article>
-
-        <article class="passion-item">
-            <div class="passion-text">
-                <h3><i class="fa-solid fa-vector-square"></i> Branding & Identité Visuelle</h3>
-                <p>Le design n'est pas qu'une question d'esthétique pour moi. Créer des logos et des interfaces cohérentes est essentiel pour donner vie à une idée et la rendre professionnelle dès le premier coup d'œil.</p>
-            </div>
-        </article>
-    </section>
-</main>
     <footer>
-        <p>&copy;2026 Pierre. Tout droits réservés.</p>
-
-       <div>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <div class="footer-content">
+            <p>&copy; 2026 Pierre stone.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

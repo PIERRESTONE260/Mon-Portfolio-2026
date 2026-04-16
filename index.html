@@ -1,99 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MON PORTFOLIO</title>
+    <title>PIERRE NGOY | Portfolio Développeur</title>
+    <link rel="shortcut icon" href="image/peter.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="/image/peter.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
-<body>
+<body class="light-theme">
+
     <header>
-        <div>
-            <a href="index.html">Mon Portfolio</a>
+        <div class="logo">
+            <a href="index.html">STONE-TECH<span>.Ts</span></a>
+        </div>
+
+        <div class="header-right">
+            <div class="theme-toggle" id="theme-button">
+                <i class="fa-solid fa-moon"></i>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
 
         <nav>
-            <ul>
+            <ul class="nav-list">
                 <li><a href="index.html" class="active">Accueil</a></li>
                 <li><a href="projets.html">Projets</a></li>
                 <li><a href="passions.html">Passions</a></li>
                 <li><a href="divertissement.html">Divertissement</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="apropos.html">À propos</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <section class="hero">
-            <div>
-                <h1>Bonjour, je suis Pierre</h1>
-                <p>Etudiant en L2 et passionné par le web</p>
-                <a href="projets.html">Voir mes projets</a>
-            </div>
-            <div>
-                <img src="image/PIERRE.jpg" width="200" alt="pierre">
+            <div class="hero-content">
+                <div class="hero-text fade-in">
+                    <span class="badge-tech">Développeur & Créateur d'Apps</span>
+                    <h1 class="slide-in-left">Pierre <span>Ngoy</span></h1>
+                    <p class="slide-in-right">Étudiant à l'UDBL. Je transforme vos idées en solutions numériques performantes, avec une expertise en Web, design et mobile.</p>
+                    <div class="hero-btns">
+                        <a href="contact.html" class="btn-primary">Me Contacter</a>
+                        <a href="apropos.html" class="btn-secondary">Découvrir</a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual slide-in-right">
+                    <div class="swiper hero-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="image/PIERRE.jpg" alt="Pierre"></div>
+                            <div class="swiper-slide"><img src="image/PDG.png" alt="Pierre Stone"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="circle-decoration"></div>
+                </div>
             </div>
         </section>
-        <section class="apropos">
-                <h2>A propos de Moi</h2>
-                <p>Bonjour! Je m'appelle Pierre Ngoy et je suis un édutiant dynamique et motivé en informatique à l'UDBL. Passionné par 
-                    le développement web, design et mobile, je suis constamment à la recherche de nouvelle opportinités d'apprentissage et de défis 
-                    stimulants.</p>
-                <p>Au cours de mes études, je dévellope de solides compétences en programmation. Je suis une personne rigoureuse, créative
-                     et j'aime travailler en équipe pour atteindre des objectifs, communs. Mon objectif est de contribuer à des projets 
-                     innovants, trouver un stage, et maitriser les langages le plus utilisé dans la technologie.</p>
-        </section>
-        <section class="competences">
-            <h2>Mes Compétences</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>CATECORIE</th>
-                        <th>COMPETENCES</th>
-                        <th>NIVEAU</th>
-                    </tr>
-                </thead>
 
-                <tbody>
-                    <tr>
-                        <td>Programmation</td>
-                        <td>HTML, CSS, JavaScript, Python</td>
-                        <td>Avancé</td>
-                    </tr>
-
-                    <tr>
-                        <td>Design</td>
-                        <td>Figma, Photoshop(bases), Illustrator(bases)</td>
-                        <td>Intermédiaire</td>
-                    </tr>
-
-                    <tr>
-                        <td>Langues</td>
-                        <td>Français(natif)</td>
-                        <td>Avancé</td>
-                    </tr>
-
-                    <tr>
-                        <td>Outils</td>
-                        <td>Git, VS Code, SublimeText</td>
-                        <td>intermédiaire</td>
-                    </tr>
-                </tbody>
-            </table>
+        <section class="competences fade-in" id="skills">
+            <div class="container">
+                <h2 class="section-title">Mon Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3"></i></div>
+                        <h3>Frontend Architecture</h3>
+                        <p>Interfaces modernes, réactives et optimisées pour l'expérience utilisateur.</p>
+                        <div class="skill-bar"><div class="progress" style="width: 95%;"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-python"></i><i class="fa-brands fa-js"></i></div>
+                        <h3>Backend & Logic</h3>
+                        <p>Développement de systèmes robustes, gestion de bases de données.</p>
+                        <div class="skill-bar"><div class="progress" style="width: 60%;"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-paint-brush"></i><i class="fa-brands fa-figma"></i></div>
+                        <h3>design UI/UX</h3>
+                        <p>Conception d'interfaces utilisateur intuitives et expériences de navigation optimisées.</p>
+                        <div class="skill-bar"><div class="progress" style="width: 80%;"></div></div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>&copy;2026 Pierre. Tout droits réservés.</p>
 
-        <div>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Pierre stone.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

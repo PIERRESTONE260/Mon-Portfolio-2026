@@ -1,68 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MON PORTFOLIO</title>
+    <title>DIVERTISSEMENT - Pierre</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="image/peter.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body class="light-theme">
     <header>
-        <div>
-            <a href="index.html">Mon Portfolio</a>
+        <div class="logo">
+            <a href="index.html">STONE-TECH<span>.Ts</span></a>
+        </div>
+       <div class="header-right">
+            <div class="theme-toggle" id="theme-button">
+                <i class="fa-solid fa-moon"></i>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
 
         <nav>
-            <ul>
+            <ul class="nav-list">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="projets.html">Projets</a></li>
                 <li><a href="passions.html">Passions</a></li>
                 <li><a href="divertissement.html" class="active">Divertissement</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="apropos.html">À propos</a></li>
             </ul>
         </nav>
     </header>
     <main>
-    <section class="entertainment-header">
-        <h2>Mon Divertissement</h2>
-        <p>Découvrez ce qui m'anime en dehors du code : ma musique et mes moments de détente.</p>
-    </section>
+        <section class="entertainment-grid">
+            <div class="ent-card fade-in">
+                <div class="ent-img-container"><img src="image/music_cover.jpg" alt="Musique"></div>
+                <div class="ent-icon"><i class="fa-solid fa-music"></i></div>
+                <h3>Musique</h3>
+                <p>"Deux ans pour mon licence"</p>
+            </div>
+            <div class="ent-card fade-in">
+                <div class="ent-img-container"><img src="image/gaming.jpg" alt="Gaming"></div>
+                <div class="ent-icon"><i class="fa-solid fa-gamepad"></i></div>
+                <h3>Gaming</h3>
+                <p>Stratégie et Tech.</p>
+            </div>
+        </section>
+    </main>
 
-    <section class="entertainment-grid">
-        <div class="ent-card">
-            <div class="ent-icon"><i class="fa-solid fa-music"></i></div>
-            <h3>Musique</h3>
-            <p>Passionné par la production musicale, je travaille sur des titres comme <strong>"Deux ans pour mon licence"</strong> et <strong>"Plus qu'un destin"</strong>.</p>
-            <span class="badge">Artiste / Compositeur</span>
-        </div>
-
-        <div class="ent-card">
-            <div class="ent-icon"><i class="fa-solid fa-gamepad"></i></div>
-            <h3>Gaming & Tech</h3>
-            <p>J'aime explorer les nouveaux univers virtuels et tester des applications innovantes pour stimuler ma créativité.</p>
-            <span class="badge">Stratégie & Aventure</span>
-        </div>
-
-        <div class="ent-card">
-            <div class="ent-icon"><i class="fa-solid fa-palette"></i></div>
-            <h3>Design Graphique</h3>
-            <p>Quand je ne développe pas, je crée des visuels, des logos et des covers d'albums pour mes projets personnels.</p>
-            <span class="badge">Digital Art</span>
-        </div>
-    </section>
-</main>
     <footer>
-        <p>&copy;2026 Pierre. Tout droits réservés.</p>
-
-        <div>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <div class="footer-content">
+            <p>&copy; 2026 Pierre stone.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,168 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="css/Style.CSS">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
+    <title>PROJETS - Pierre</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/peter.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-    <header> 
-        <div>
-          <a href="index.html">Mon Portfolio</a>
+<body class="light-theme">
+    <header>
+        <div class="logo">
+            <a href="index.html">STONE-TECH<span>.Ts</span></a>
         </div>
+        <div class="header-right">
+            <div class="theme-toggle" id="theme-button">
+                <i class="fa-solid fa-moon"></i>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
         <nav>
-          <ul>
-            <li><a href="index.html" >Accueil</a></li>
-            <li><a href="Projets.html"class="active">Projets</a></li>
-            <li><a href="Passions.html">Passions</a></li>
-            <li><a href="Divertissement.html">Divertissement</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+            <ul class="nav-list">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="divertissement.html">Divertissement</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
-      </header>
-      <main>
-        <h1>Voici mes projects</h1>
-      </main>
-      <section class="projects">
 
-    <div class="project-card">
-        <img src="image/edusearchai.avif">
-
-        <div class="project-content">
-            <h3>EduSearchAi</h3>
-            <p>Un moteur de recherche conçu pour les étudiants, élèves et professeurs.</p>
-
-            <div class="tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JS</span>
-                <span>Json</span>
+    </header>
+    <main>
+        <section class="projets-header fade-in">
+            <h2>Mes Réalisations</h2>
+            <div class="projets-grid">
+                <div class="ent-card">
+                    <div class="ent-img-container"><img src="image/EduSearch.png" alt="EduSearch"></div>
+                    <h3>EduSearch</h3>
+                    <p>Moteur de recherche éducatif pour les étudiants, élèves et professeurs.</p>
+                </div>
+                <div class="ent-card">
+                    <div class="ent-img-container"><img src="image/peterstone.jpg" alt="Novacrea"></div>
+                    <h3>Novacrea Portal</h3>
+                    <p>Plateforme de gestion pour club étudiant.</p>
+                </div>
             </div>
+        </section>
+    </main>
 
-            <div class="project-links">
-                <a href=""><i class="fa-brands fa-github"></i>code</a>
-                <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i>Démo</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="project-card">
-        <img src="image/filmsall.png">
-
-        <div class="project-content">
-            <h3>FilmsAll</h3>
-            <p>une application web de streaming de films et séries.</p>
-
-            <div class="tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JS</span>
-                <span>Json</span>
-            </div>
-
-            <div class="project-links">
-                <a href=""><i class="fa-brands fa-github"></i>code</a>
-                <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i>Démo</a>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Pierre stone.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
             </div>
         </div>
-    </div>
-    <div class="project-card">
-        <img src="image/images (10).jpg">
-
-        <div class="project-content">
-            <h3>AgStone</h3>
-            <p>Une application web de gestion de projets, des tâches et des ressources.</p>
-
-            <div class="tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JS</span>
-                <span>Json</span>
-            </div>
-
-            <div class="project-links">
-                <a href=""><i class="fa-brands fa-github"></i>code</a>
-                <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i>Démo</a>
-            </div>
-        </div>
-    </div>
-    <div class="project-card">
-        <img src="image/photo-1544197150-b99a580bb7a8.avif">
-
-        <div class="project-content">
-            <h3>CloudStone</h3>
-            <p>Une application de cloud computing, ce personnelle.</p>
-
-            <div class="tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JS</span>
-                <span>Json</span>
-            </div>
-
-            <div class="project-links">
-                <a href=""><i class="fa-brands fa-github"></i>code</a>
-                <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i>Démo</a>
-            </div>
-        </div>
-    </div>
-    <div class="project-card">
-        <img src="image/photo-1460925895917-afdab827c52f.avif">
-
-        <div class="project-content">
-            <h3>Royal Tech</h3>
-            <p>Une application web de gestion de projets, des tâches et des ressources. pour les entreprises.</p>
-
-            <div class="tags">
-                <span>JS</span>
-                <span>CSS</span>
-                <span>HTML</span>
-                <span>Json</span>
-            </div>
-
-            <div class="project-links">
-                <a href=""><i class="fa-brands fa-github"></i>code</a>
-                <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i>Démo</a>
-            </div>
-        </div>
-    </div>
-    <div class="project-card">
-        <img src="image/peterstone.jpg">
-
-        <div class="project-content">
-            <h3>PeterStone</h3>
-            <p>Une application de gestion des vos projets et tâches, et services miltiples.</p>
-
-            <div class="tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JS</span>
-                <span>Python</span>
-            </div>
-
-            <div class="project-links">
-                <a href=""><i class="fa-brands fa-github"></i>code</a>
-                <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i>Démo</a>
-            </div>
-        </div>
-    </div>
-
-</section>
-
-      <footer>
-
-        <p>&copy; 2026 Pierre. Tous droits réservés.</p>
-
-        <div>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-        </div>
-      </footer>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
