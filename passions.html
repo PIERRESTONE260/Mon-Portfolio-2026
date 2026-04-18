@@ -29,28 +29,77 @@
                 <li><a href="passions.html" class="active">Passions</a></li>
                 <li><a href="divertissement.html">Divertissement</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="apropos.html">À propos</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="passions-intro fade-in">
-            <h2>Ce qui me fait vibrer</h2>
-        </section>
-        <section class="passions-list">
-            <article class="passion-item fade-in">
-                <div class="passion-image"><img src="image/filmsall.png" alt="Education"></div>
-                <div class="passion-text">
-                    <h3>Outils éducatifs</h3>
-                    <p>Concevoir des solutions pour l'UDBL.</p>
+
+    <main class="container">
+        <section class="projets-header fade-in">
+            <h2 class="section-title">Ce qui me fait vibrer</h2>
+            
+            <div class="projets-grid">
+                <!-- Passion 1: Éducation -->
+                <div class="ent-card">
+                    <div class="ent-img-container">
+                        <img src="image/filmsall.png" alt="Education">
+                    </div>
+                    <div class="ent-info">
+                        <h3>Outils Éducatifs</h3>
+                        <p>Concevoir des solutions numériques pour faciliter l'apprentissage à l'UDBL.</p>
+                        <div class="tags">
+                            <span class="tag">EdTech</span>
+                            <span class="tag">UDBL</span>
+                            <span class="tag">E-learning</span>
+                        </div>
+                        <div class="card-footer">
+                            <a href="projets.html"><i class="fa-solid fa-lightbulb"></i> Vision</a>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i> Voir</a>
+                        </div>
+                    </div>
                 </div>
-            </article>
-            <article class="passion-item reverse fade-in">
-                <div class="passion-text">
-                    <h3>IA & Innovation</h3>
-                    <p>Exploration des modèles GPT et APIs vocales.</p>
+
+                <!-- Passion 2: IA -->
+                <div class="ent-card">
+                    <div class="ent-img-container">
+                        <img src="image/photo-1460925895917-afdab827c52f.avif" alt="IA">
+                    </div>
+                    <div class="ent-info">
+                        <h3>IA & Innovation</h3>
+                        <p>Exploration des modèles GPT, du Deep Learning et des APIs vocales futuristes.</p>
+                        <div class="tags">
+                            <span class="tag">OpenAI</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Future</span>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#"><i class="fa-solid fa-microchip"></i> Lab</a>
+                            <a href="#"><i class="fa-solid fa-book"></i> Blog</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="passion-image"><img src="image/photo-1460925895917-afdab827c52f.avif" alt="IA"></div>
-            </article>
+
+                <!-- Passion 3: UI/UX Design -->
+                <div class="ent-card">
+                    <div class="ent-img-container">
+                        <img src="image/peterstone.jpg" alt="Design">
+                    </div>
+                    <div class="ent-info">
+                        <h3>Design & Esthétique</h3>
+                        <p>Créer des interfaces qui allient minimalisme, ergonomie et émotion visuelle.</p>
+                        <div class="tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">UI</span>
+                            <span class="tag">Creative</span>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#"><i class="fa-solid fa-palette"></i> Portfolio</a>
+                            <a href="#"><i class="fa-solid fa-eye"></i> Aperçu</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
     </main>
 
@@ -64,6 +113,7 @@
             </div>
         </div>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
