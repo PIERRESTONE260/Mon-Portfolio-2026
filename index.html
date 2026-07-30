@@ -1,92 +1,114 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PIERRE NGOY | Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="image/peter.svg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-</head>
-<body class="light-theme">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PIERRE NGOY | Portfolio</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="image/peter.svg" type="image/x-icon">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    </head>
+    <body class="light-theme">
 
-    <header>
-        <div class="logo"><a href="index.html">STONE-TECH<span>.Ts</span></a></div>
-        <div class="header-right">
-            <div class="theme-toggle" id="theme-button"><i class="fa-solid fa-moon"></i></div>
-            <div class="menu-toggle" id="mobile-menu"><i class="fa-solid fa-bars"></i></div>
-        </div>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="passions.html">Passions</a></li>
-                <li><a href="divertissement.html">Divertissement</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="apropos.html">À propos</a></li>
-            </ul>
-        </nav>
-    </header>
+        <header>
+            <div class="logo"><a
+                    href="index.html">STONE-TECH<span>.Ts</span></a></div>
+            <div class="header-right">
+                <div class="theme-toggle" id="theme-button"><i
+                        class="fa-solid fa-moon"></i></div>
+                <div class="menu-toggle" id="mobile-menu"><i
+                        class="fa-solid fa-bars"></i></div>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="passions.html">Passions</a></li>
+                    <li><a href="divertissement.html">Divertissement</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <section class="hero container">
-            <div class="hero-content">
-                <div class="hero-text fade-in">
-                    <h1 class="slide-in-left">Pierre <span>Ngoy</span></h1>
-                    <p class="slide-in-right">Étudiant à l'UDBL. Je transforme vos idées en solutions numériques performantes.</p>
-                    <div class="hero-btns">
-                        <a href="contact.html" class="btn-primary">Me Contacter</a>
-                        <a href="apropos.html" class="btn-secondary">Découvrir</a>
-                    </div>
-                </div>
-                
-                <div class="hero-visual slide-in-right">
-                    <div class="swiper hero-swiper">
-                        <div class="swiper-wrapper">
-                            <!-- Vérifie que les noms de fichiers sont bien en minuscules dans ton dossier -->
-                            <div class="swiper-slide"><img src="image/pierre.jpg" alt="Pierre"></div>
-                            <div class="swiper-slide"><img src="image/pdg.png" alt="Pierre Stone"></div>
+        <main>
+            <section class="hero container">
+                <div class="hero-content">
+                    <div class="hero-text fade-in">
+                        <h1 class="slide-in-left">Pierre <span>Ngoy</span></h1>
+                        <p class="slide-in-right">Étudiant à l'UDBL. Je
+                            transforme vos idées en solutions numériques
+                            performantes.</p>
+                        <div class="hero-btns">
+                            <a href="contact.html" class="btn-primary">Me
+                                Contacter</a>
+                            <a href="apropos.html"
+                                class="btn-secondary">Découvrir</a>
                         </div>
-                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="circle-decoration"></div>
+
+                    <div class="hero-visual slide-in-right">
+                        <div class="swiper hero-swiper">
+                            <div class="swiper-wrapper">
+                                <!-- Vérifie que les noms de fichiers sont bien en minuscules dans ton dossier -->
+                                <div class="swiper-slide"><img
+                                        src="image/pierre.jpg"
+                                        alt="Pierre"></div>
+                                <div class="swiper-slide"><img
+                                        src="image/pdg.png"
+                                        alt="Pierre Stone"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="circle-decoration"></div>
+                    </div>
                 </div>
+            </section>
+
+            <section class="container fade-in">
+                <h2 class="section-title">Mon Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i
+                                class="fa-brands fa-html5"></i></div>
+                        <h3>Frontend</h3>
+                        <div class="skill-bar"><div class="progress"
+                                style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i
+                                class="fa-brands fa-python"></i></div>
+                        <h3>Backend</h3>
+                        <div class="skill-bar"><div class="progress"
+                                style="width: 65%;"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i
+                                class="fa-brands fa-figma"></i></div>
+                        <h3>Design</h3>
+                        <div class="skill-bar"><div class="progress"
+                                style="width: 80%;"></div></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Pierre stone.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/pierre-ngoy-2ab672357"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/PIERRESTONE260.git"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
             </div>
-        </section>
+        </footer>
 
-        <section class="container fade-in">
-            <h2 class="section-title">Mon Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
-                    <h3>Frontend</h3>
-                    <div class="skill-bar"><div class="progress" style="width: 90%;"></div></div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
-                    <h3>Backend</h3>
-                    <div class="skill-bar"><div class="progress" style="width: 65%;"></div></div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fa-brands fa-figma"></i></div>
-                    <h3>Design</h3>
-                    <div class="skill-bar"><div class="progress" style="width: 80%;"></div></div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Pierre stone.</p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/pierre-ngoy-2ab672357"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/PIERRESTONE260.git"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
 </html>
